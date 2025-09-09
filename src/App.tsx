@@ -23,7 +23,7 @@ function App() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Welcome To MyWebsite
-              <span className="block bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
                 PerfumePeony
               </span>
             </h1>
@@ -84,7 +84,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
                 PerfumePeony
               </h3>
               <p className="text-gray-300">
