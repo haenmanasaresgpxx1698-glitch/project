@@ -28,7 +28,7 @@ function App() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto">
-              Explore our curated collection of luxury perfumes and find the scent that defines you
+              The origin of peony perfume can be traced back to many aspects, including cultural background, flower characteristics and the inspiration of perfumers Cultural origin: Peony has a high status in Chinese culture, known as the "king of flowers" and "national beauty and fragrance", symbolizing happiness, elegance, and prosperity. The Tang Dynasty was the heyday of peony culture, and poet Liu Yuxi's poem "Only peonies have the true national color, and when they bloom, they move the capital city" vividly depicts the grand scene of peonies in full bloom. The classic Chinese love story "The Peony Pavilion" is also set against the backdrop of a peony garden, further imbuing the peony with a romantic color. These cultural factors make peonies a highly attractive fragrance theme. In Western culture, the peony in ancient Greek mythology is the flower of the gods, named after the physician Pain on Mount Olympus, symbolizing nobility and healing. This cultural implication also laid the foundation for the development of peony perfume in the West.
             </p>
             <div className="flex flex-wrap justify-center gap-8 mt-12">
               <div className="flex items-center gap-2">
