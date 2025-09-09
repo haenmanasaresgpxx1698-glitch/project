@@ -23,7 +23,7 @@ function App() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Welcome To MyWebsite
-              <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-gray-600 to-gray-700 bg-clip-text text-transparent">
                 PerfumePeony
               </span>
             </h1>
