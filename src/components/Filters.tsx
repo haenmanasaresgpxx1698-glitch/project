@@ -14,16 +14,16 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+    <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
       <div className="flex items-center gap-2 mb-6">
         <SlidersHorizontal className="h-5 w-5 text-purple-600" />
-        <h2 className="text-lg font-semibold text-gray-800">Filters</h2>
+        <h2 className="text-lg font-semibold text-white">Filters</h2>
       </div>
 
       <div className="space-y-6">
         {/* Price Range */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">
+          <label className="block text-sm font-medium text-gray-300 mb-3">
             Price Range: ${filters.priceRange[0]} - ${filters.priceRange[1]}
           </label>
           <div className="flex items-center space-x-4">
@@ -48,11 +48,11 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
 
         {/* Fragrance Family */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Fragrance Family</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Fragrance Family</label>
           <select
             value={filters.fragranceFamily}
             onChange={(e) => updateFilter('fragranceFamily', e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full border border-gray-600 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-700 text-white"
           >
             <option value="">All Families</option>
             {fragranceFamilies.map((family) => (
@@ -63,11 +63,11 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
 
         {/* Brand */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Brand</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Brand</label>
           <select
             value={filters.brand}
             onChange={(e) => updateFilter('brand', e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full border border-gray-600 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-700 text-white"
           >
             <option value="">All Brands</option>
             {brands.map((brand) => (
@@ -78,7 +78,7 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
 
         {/* Gender */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Gender</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Gender</label>
           <div className="space-y-2">
             {['male', 'female', 'unisex'].map((gender) => (
               <label key={gender} className="flex items-center">
@@ -88,9 +88,9 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
                   value={gender}
                   checked={filters.gender === gender}
                   onChange={(e) => updateFilter('gender', e.target.value)}
-                  className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300"
+                  className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-600 bg-gray-700"
                 />
-                <span className="ml-2 text-sm text-gray-700 capitalize">{gender}</span>
+                <span className="ml-2 text-sm text-gray-300 capitalize">{gender}</span>
               </label>
             ))}
             <label className="flex items-center">
@@ -100,20 +100,20 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
                 value=""
                 checked={filters.gender === ''}
                 onChange={(e) => updateFilter('gender', e.target.value)}
-                className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300"
+                className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-600 bg-gray-700"
               />
-              <span className="ml-2 text-sm text-gray-700">All</span>
+              <span className="ml-2 text-sm text-gray-300">All</span>
             </label>
           </div>
         </div>
 
         {/* Concentration */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Concentration</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Concentration</label>
           <select
             value={filters.concentration}
             onChange={(e) => updateFilter('concentration', e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full border border-gray-600 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-700 text-white"
           >
             <option value="">All Concentrations</option>
             {concentrations.map((concentration) => (
@@ -124,11 +124,11 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
 
         {/* Occasion */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Occasion</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Occasion</label>
           <select
             value={filters.occasion}
             onChange={(e) => updateFilter('occasion', e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full border border-gray-600 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-700 text-white"
           >
             <option value="">All Occasions</option>
             {occasions.map((occasion) => (
@@ -139,11 +139,11 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
 
         {/* Season */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-3">Season</label>
+          <label className="block text-sm font-medium text-gray-300 mb-3">Season</label>
           <select
             value={filters.season}
             onChange={(e) => updateFilter('season', e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full border border-gray-600 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-700 text-white"
           >
             <option value="">All Seasons</option>
             {seasons.map((season) => (
@@ -164,7 +164,7 @@ export const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => 
           season: '',
           concentration: ''
         })}
-        className="w-full mt-6 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-medium"
+        className="w-full mt-6 bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors duration-200 font-medium"
       >
         Clear All Filters
       </button>

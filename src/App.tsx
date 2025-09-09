@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gray-900">
       <Header searchQuery={filters.searchQuery} onSearchChange={updateSearchQuery} />
       
       {/* Hero Section */}
@@ -24,7 +24,7 @@ function App() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Discover Your Perfect
               <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Fragrance
+                PerfumePeony
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto">
@@ -64,12 +64,12 @@ function App() {
           {/* Main Content */}
           <div className="flex-1">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-gray-800">
+              <h2 className="text-2xl font-bold text-white">
                 {filteredPerfumes.length === perfumes.length 
                   ? 'All Perfumes' 
                   : `${filteredPerfumes.length} Results`}
               </h2>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-gray-300">
                 {filteredPerfumes.length} of {perfumes.length} perfumes
               </div>
             </div>
@@ -85,15 +85,15 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                PerfumeFinder
+                PerfumePeony
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 Your trusted destination for authentic luxury fragrances.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Shop</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-300">
                 <li><a href="#" className="hover:text-white transition-colors">New Arrivals</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Best Sellers</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Niche Brands</a></li>
@@ -102,7 +102,7 @@ function App() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-300">
                 <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Shipping Info</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Returns</a></li>
@@ -111,7 +111,7 @@ function App() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-300">
                 <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Facebook</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
@@ -119,8 +119,8 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 PerfumeFinder. All rights reserved.</p>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <p>&copy; 2024 PerfumePeony. All rights reserved.</p>
           </div>
         </div>
       </footer>
