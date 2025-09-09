@@ -5,7 +5,7 @@ export const perfumes: Perfume[] = [
     id: '1',
     name: 'Coco Mademoiselle',
     brand: 'Chanel',
-    price: 128,
+    price: 108,
     image: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=400',
     fragrance_family: 'Oriental Floral',
     top_notes: ['Orange', 'Mandarin', 'Orange Blossom'],
