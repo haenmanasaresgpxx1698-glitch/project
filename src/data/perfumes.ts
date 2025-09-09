@@ -110,7 +110,7 @@ export const perfumes: Perfume[] = [
     id: '6',
     name: 'La Vie Est Belle',
     brand: 'Lancôme',
-    price: 95,
+    price: 75,
     image: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=400',
     fragrance_family: 'Oriental Gourmand',
     top_notes: ['Black Currant', 'Pear'],
